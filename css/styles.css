@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css?family=Biryani:700&display=swap');
+
+/* general styling  sart */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    font-size: 16px;
+line-height: 1.25em;
+
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+
+}
+/* insert smooth scroll start */
+body{
+    min-height: 100vh;
+    background-color: #ddd;
+
+}
+
+.card{
+  background-color: #ddd;
+}
+.btn{
+ /* color: #6ec25e; */
+}
+.scroll-effect{
+    width: 100%;
+    height: inherit;
+    overflow-y: scroll;
+    scroll-behavior:smooth;
+}
+
+section{
+    scroll-snap-align: center;
+}
+
+/* insert smooth scroll end */
+
+
+
+
+
+.hero-intro{
+  z-index:99;
+  color: white;
+
+}
+
+.hero-intro h1,.hero-intro h4{
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-family: 'Biryani', ;
+  /* letter-spacing: 0.04rem; */
+}
+
+.hero-card{
+  width: 20rem;
+  opacity: 0.7;
+
+}
+/* jumbotron start */
+
+.bg-img {
+  background-image: url("./footer-bg\ 2.jpg");
+  /* filter: brightness(1.2); */
+  background-size: cover;
+  background-position-x: center ;
+  background-position-y: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ min-height: 100vh;
+ width: 100%;
+  z-index: 1; /* necessary? is this positioned relative or absolute elsewhere? */
+ position: relative;
+
+ animation: increase 1s ease-in forwards ;
+}
+
+
+.tag-line {
+color: whitesmoke;
+font-weight: lighter;
+font-size: small;
+opacity: 0.7;
+border-radius: 5px;
+}
+.bg-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+    opacity: 0.5;
+  z-index: 1 /*Moved one position above the -10 */
+}
+/* jumbotron end */
+
+
+/* motl segment start  */
+
+
+    /* motl-videos start */
+    /* this is the width of the videos on a large screen */
+.inner-iframe{
+    width: 19rem;
+}
+
+    /* motl-videos end */
+/* motl segment  end */
+
+
+
+/* styling timers  */
+
+.timer{
+    padding: 0.1rem;
+    font-size: 0.7rem;
+}
+
+.timer{
+  background: whitesmoke;
+    margin: 0px 10px;
+    color: #303A40;
+    font-weight: bold;
+
+}
+.days-div{
+    margin-left: 0px;
+}
+
+.timer-description{
+    font-weight: bold;
+}
+
+.timer-digit{
+  /* font-size: 20px; */
+  font-weight: bold;
+
+}
+/* styling timers end */
+
+
+/* styling video start  */
+video{
+    border-radius: 5px;
+  }
+  
+/* styling video end */
+
+
+
+#motl-section{
+    background-attachment: fixed;
+    
+}
+
+/* motl-gtw fixed start */
+.motl-gtw,
+.sa-wec{
+    background-image: url("./hero-7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+
+/* motl-gtw fixed end */
+
+
+/* wec-styling start */
+.inner-iframe-wec{
+  width: 18rem;
+}
+
+
+/* wec-styling end */
+
+.project-area{
+    padding: 4rem 0;
+}
+
+.button-group button{
+
+    background:transparent;
+    border: none;
+    font: normal 500 16px/130px ;
+    text-transform: uppercase;
+}
+
+.button-group button + button{
+    /* padding-left: 3rem;    */
+}
+button:focus,
+button:active,
+button:hover,
+.btn-active{
+    outline:0px;
+    box-shadow: none;
+}
+.btn:focus,
+.btn:active,
+.btn:hover,
+.btn-active{
+    outline:0px;
+    box-shadow: none;
+}
+.aud:focus,
+.aud:active,
+.aud:hover,
+.aud-active{
+    outline:0px;
+    box-shadow: none;
+border-radius: 0;
+}
+
+.img img{
+  width: 17rem;
+  border-radius: 5px;
+}
+.img video{
+  width: 17rem;
+}
+
+.img a:hover img{
+  filter: brightness(1.1) drop-shadow(1px 8px 30px whitesmoke)
+}
+
+/* gallery-section start  */
+
+
+/* footer start */
+
+  
+  /* motl segment start  */
+
+
+
+
+  /* footer start */
+  
+/* jumbotron start */
+
+.bg-footer-img {
+    background-image: url("./hero-kj.jpg");
+    /* filter: brightness(1.7); */
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1; /* necessary? is this positioned relative or absolute elsewhere? */
+   position: relative;
+  }
+  
+  .bg-footer-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, .7);
+    z-index: -9 /*Moved one position above the -10 */
+  }
+
+  
+.bg-motl-img {
+    background-image: url("./motl-bg.jpg");
+    /* filter: brightness(1.7); */
+    background-size: cover;
+    background-position:top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1; /* necessary? is this positioned relative or absolute elsewhere? */
+   position: relative;
+  }
+  
+  .bg-motl-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, .7);
+    z-index: -9 /*Moved one position above the -10 */
+  }
+
+  .bg-gtw-img {
+              /* find another image for gtw-mobile */
+
+    background-image: url("./gtw.jpg");
+    /* filter: brightness(1.7); */
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1; /* necessary? is this positioned relative or absolute elsewhere? */
+   position: relative;
+  }
+  
+  .bg-gtw-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, .7);
+    z-index: -9 /*Moved one position above the -10 */
+  }
+
+  
+  .bg-wec-img {
+              /* find another image for gtw-mobile */
+
+    background-image: url("./wec-mobile.jpg");
+    /* filter: brightness(1.7); */
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 1; /* necessary? is this positioned relative or absolute elsewhere? */
+   position: relative;
+  }
+  
+  .bg-wec-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, .7);
+    z-index: -9 /*Moved one position above the -10 */
+  }
+
+  
+  /* jumbotron end */
+/* footer end */
+
+
+.card{
+    opacity: 0.8;
+}
+
+.title-h1{
+  color: whitesmoke;
+}
+p{
+  /* color: gray; */
+  font-size: 1.2rem;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+h5, small{
+  letter-spacing: 0.2px;
+}
+ small{
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+
+  color: #303A40;
+  font-size: 1.2rem;
+
+}
+#ghana-gallery{
+  background-color: whitesmoke;
+}
+.project-title{
+  color: #303A40;
+  font-weight: bold;
+}
+
+
+#special-video-height{
+  height: 60vh;
+}
+
+
+.g-b{
+  color: whitesmoke;
+  margin-top:1rem;
+}
+.button-group .g-b{
+  background-color: #303A40;
+}.button-group .g-b:active,.g-b:focus,.button-group .active{
+  background-color: #28a745;
+}
+
+/* // No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+ 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {   
+  .timer{
+    font-size: 0.9rem;
+}
+  .inner-iframe{
+  width: 23rem;
+  height: 35vh;
+}
+
+
+
+.hero-card{
+  opacity: 0.7;
+  width: 25rem;
+}
+
+h4 {
+
+  color: #303A40;
+  font-size: 1.6rem;
+}
+.tag-line {
+  font-size: larger;
+  opacity: 0.7;
+  }
+
+  .inner-iframe-wec{
+    width: 18rem;
+  }
+}
+.contact{
+  height: 36vh;
+}
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .inner-iframe-wec{
+    width: 20rem;
+    height: 30vh;
+  
+  }
+
+      /* .inner-iframe{
+        width: 25rem;
+        height: 40vh;
+    } */
+    /* .inner-iframe-wec{
+      width: 23rem;
+      height: 40vh;
+  } */
+
+  .hero-intro h1{
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: whitesmoke;
+
+  }
+
+  #ghana-gallery{
+    background-color: #303A40;
+  }
+  .project-title{
+    color: whitesmoke;
+  }
+
+ #gallery-header{
+    font-size: 3.5rem;
+  }
+  .g-b{
+    color: #303A40;
+  }
+  .button-group .g-b{
+    background-color: rgba(245, 245, 245, 0.925);
+  } .button-group .g-b:hover{
+    background-color: #545b62;;
+    color: whitesmoke;
+  }.button-group .g-b:active,.g-b:focus,.button-group .active{
+    background-color: #28a745;
+  }
+
+
+  .img img{
+  width: 20rem;
+  border-radius: 5px;
+}
+.img video{
+  width: 20rem;
+}
+
+.img a:hover img{
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #343a40)
+}
+#ghana-gallery p{
+  color: whitesmoke;
+
+
+}
+
+@keyframes increase{
+  0%{
+    filter: brightness(0.1);
+  } 100%{
+    filter: brightness(1.4);
+  }
+}
+ }
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+
+#register-btn{
+  background-color: rgba(255, 68, 0, 0.888);
+  border: none;
+  outline: none;
+}#register-btn:hover{
+  background-color: rgba(255, 68, 0, 1);
+  border: none;
+  outline: none;
+  
+}#register-btn:hover{
+  background-color: rgba(255, 68, 0, 1);
+  border: none;
+  outline: none;
+  
+}
